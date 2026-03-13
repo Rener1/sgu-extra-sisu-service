@@ -108,6 +108,10 @@ public class Fachada {
         return editalInscricaoHandler.buscarInscricaoPorId(idInscricao);
     }
 
+    public InscricaoDetalhadaResponse buscarDetalhesInscricaoExterna(Long idInscricao) {
+        return editalAdminHandler.buscarDetalhesInscricao(idInscricao);
+    }
+
     public InscricaoResponse atualizarStatusInscricaoExterna(Long idInscricao, Long idNovoStatus, String observacao) {
         return editalInscricaoHandler.atualizarStatusInscricao(idInscricao, idNovoStatus, observacao);
     }
